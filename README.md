@@ -68,7 +68,7 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 
 [![Enviar Reporte](https://img.shields.io/badge/🌸_ENVIAR_REPORTE-FF6B9D?style=for-the-badge&logoColor=white&labelColor=FF91AF)](https://jenni2206.github.io/jenni2206/formulario-quejas.html)
 
-*Todos los mensajes llegan directamente a `20151915@clases.edu.sv`* 💌
+*Todos los mensajes llegan directamente a `3714383@clases.edu.sv`* 💌
 
 </div>
 
