@@ -63,15 +63,6 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 
 ---
 
-### 📊 Estadísticas
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jenni2206&show_icons=true&include_all_commits=true&count_private=true&title_color=C47B8A&icon_color=F2C4CE&text_color=5C3A2E&bg_color=FDF0F0&border_color=F2C4CE" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jenni2206&layout=compact&title_color=C47B8A&text_color=5C3A2E&bg_color=FDF0F0&border_color=F2C4CE" alt="Top Languages" />
-</p>
-
----
-
 ### 🎀 Zona de Reportes
 
 ¿Encontraste algo que no funciona? ¡Cuéntame con mucho amor! El mensaje llega directo a mi correo. 🐱
