@@ -43,7 +43,7 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 
 <div align="center">
 
-[![Archivos Subidos](https://img.shields.io/badge/🎀_VER_ARCHIVOS_SUBIDOS-FF91AF?style=for-the-badge&logoColor=white&labelColor=FF6B9D)](https://artiga101.github.io/artiga101/archivos-subidos.html)
+[![Archivos Subidos](https://img.shields.io/badge/🎀_VER_ARCHIVOS_SUBIDOS-FF91AF?style=for-the-badge&logoColor=white&labelColor=FF6B9D)](https://jenni2206.github.io/jenni2206/archivos-subidos.html)
 
 *Explora todos los archivos del repositorio en tiempo real* 🐱
 
@@ -54,8 +54,8 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 ### 📊 Estadísticas Kawaii
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=artiga101&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&title_color=FF91AF&icon_color=FFB7C5&text_color=ffffff&bg_color=1a1a2e" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=artiga101&layout=compact&theme=dracula&title_color=FF91AF&text_color=ffffff&bg_color=1a1a2e" alt="Top Languages" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jenni2206&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&title_color=FF91AF&icon_color=FFB7C5&text_color=ffffff&bg_color=1a1a2e" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jenni2206&layout=compact&theme=dracula&title_color=FF91AF&text_color=ffffff&bg_color=1a1a2e" alt="Top Languages" />
 </p>
 
 ---
@@ -66,7 +66,7 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 
 <div align="center">
 
-[![Enviar Reporte](https://img.shields.io/badge/🌸_ENVIAR_REPORTE-FF6B9D?style=for-the-badge&logoColor=white&labelColor=FF91AF)](https://artiga101.github.io/artiga101/formulario-quejas.html)
+[![Enviar Reporte](https://img.shields.io/badge/🌸_ENVIAR_REPORTE-FF6B9D?style=for-the-badge&logoColor=white&labelColor=FF91AF)](https://jenni2206.github.io/jenni2206/formulario-quejas.html)
 
 *Todos los mensajes llegan directamente a `20151915@clases.edu.sv`* 💌
 
@@ -90,7 +90,7 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=artiga101&color=FF91AF&style=flat-square&label=Visitas+Kawaii" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=jenni2206&color=FF91AF&style=flat-square&label=Visitas+Kawaii" alt="Profile views" />
 
   *✿ Hecho con mucho código y más Hello Kitty ✿*
 </div>
