@@ -79,10 +79,10 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 ### 💌 Conectemos
 
 <p align="left">
-  <a href="https://mail.google.com/mail/?view=cm&to=20151915@clases.edu.sv&su=Hola%20desde%20GitHub%20🎀" target="_blank">
+  <a href="https://mail.google.com/mail/?view=cm&to=3714383@clases.edu.sv&su=Hola%20desde%20GitHub%20🎀" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-FF6B9D?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://www.linkedin.com/in/jefferson-artiga-2580b231b" target="_blank">
+  <a href="https://www.linkedin.com" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
