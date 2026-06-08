@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Archivos Subidos 🎀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --pink:   #F2C4CE;
+      --rose:   #C47B8A;
+      --brown:  #A0695A;
+      --dark:   #5C3A2E;
+      --light:  #FDF5F0;
+      --card:   #ffffff;
+      --border: #EDD5C0;
+      --muted:  #A0695A;
+    }
+    body {
+      background: var(--light);
+      background-image: radial-gradient(circle, #F2C4CE35 1.5px, transparent 1.5px);
+      background-size: 22px 22px;
+      color: var(--dark);
+      font-family: 'Nunito', sans-serif;
+      min-height: 100vh;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #A0695A 0%, #C47B8A 50%, #F2C4CE 100%);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '🌅';
+      position: absolute;
+      font-size: 9rem;
+      opacity: 0.08;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '🐱';
+      position: absolute;
+      font-size: 6rem;
+      opacity: 0.08;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .hero-tag { font-size: 0.68rem; letter-spacing: 0.22em; color: #FDF5F0cc; text-transform: uppercase; font-weight: 700; margin-bottom: 0.5rem; }
+    .hero h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; color: #fff; line-height: 1.1; text-shadow: 0 2px 12px #A0695A40; }
+    .hero-sub { margin-top: 0.4rem; font-size: 0.84rem; color: #FDF5F0cc; }
+
+    /* Stats */
+    .stat-bar { display: flex; background: var(--card); border-bottom: 2px solid var(--border); }
+    .stat { flex: 1; padding: 0.85rem 1.25rem; border-right: 2px solid var(--border); display: flex; flex-direction: column; gap: 2px; }
+    .stat:last-child { border-right: none; }
+    .stat-label { font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+    .stat-value { font-size: 1.3rem; font-weight: 800; color: var(--rose); }
+    .stat-value.brown { color: var(--brown); }
+
+    /* Main */
+    main { padding: 1.5rem 1.25rem; max-width: 920px; margin: 0 auto; }
+
+    /* Filter bar */
+    .filter-bar { display: flex; gap: 8px; margin-bottom: 1.25rem; flex-wrap: wrap; align-items: center; }
+    .filter-btn {
+      font-size: 0.76rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 5px 14px; border: 2px solid var(--border); border-radius: 20px;
+      background: transparent; color: var(--muted); cursor: pointer;
+      transition: all 0.15s; font-family: 'Nunito', sans-serif;
+    }
+    .filter-btn:hover, .filter-btn.active { border-color: var(--rose); color: var(--rose); background: #FDF0EC; }
+    .search-box {
+      margin-left: auto; background: var(--card); border: 2px solid var(--border);
+      border-radius: 20px; padding: 5px 14px; color: var(--dark);
+      font-family: 'Nunito', sans-serif; font-size: 0.82rem; outline: none;
+      width: 180px; transition: border-color 0.15s; font-weight: 600;
+    }
+    .search-box:focus { border-color: var(--rose); }
+    .search-box::placeholder { color: var(--muted); }
+
+    /* Grid */
+    .files-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+
+    /* Card */
+    .file-card {
+      background: var(--card); border: 2px solid var(--border); border-radius: 20px;
+      padding: 1.1rem; display: flex; flex-direction: column; gap: 10px;
+      cursor: pointer; text-decoration: none; color: inherit;
+      transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+    }
+    .file-card:hover { border-color: var(--rose); transform: translateY(-4px); box-shadow: 0 8px 28px #C47B8A20; }
+    .file-icon { font-size: 1.9rem; line-height: 1; }
+    .file-name { font-size: 0.82rem; font-weight: 700; color: var(--dark); word-break: break-word; line-height: 1.4; }
+    .file-meta { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+    .file-ext { font-size: 0.67rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 9px; border-radius: 10px; }
+    .file-size { font-size: 0.72rem; color: var(--muted); font-weight: 600; }
+
+    .ext-pdf   { background: #fde8e8; color: #b03030; }
+    .ext-docx, .ext-doc { background: #e8f0fe; color: #1a5cbf; }
+    .ext-pptx, .ext-ppt { background: #feeee8; color: #b05020; }
+    .ext-xlsx, .ext-xls { background: #e8fdf0; color: #1a8f50; }
+    .ext-java  { background: #fff0e0; color: #906010; }
+    .ext-py    { background: #e8f4fe; color: #1a50a0; }
+    .ext-sql   { background: #f4e8fe; color: #7020a0; }
+    .ext-cpp, .ext-c { background: #e8effe; color: #2030a0; }
+    .ext-zip, .ext-rar { background: #fefae8; color: #806010; }
+    .ext-default { background: #F9EDE8; color: var(--rose); }
+
+    .dl-badge { font-size: 0.68rem; color: var(--muted); display: flex; align-items: center; gap: 4px; transition: color 0.15s; font-weight: 700; }
+    .file-card:hover .dl-badge { color: var(--rose); }
+
+    .state-box { text-align: center; padding: 4rem 2rem; color: var(--muted); grid-column: 1 / -1; }
+    .state-box .icon { font-size: 3.5rem; margin-bottom: 1rem; }
+    .state-box p { font-size: 0.9rem; font-weight: 600; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner { width: 30px; height: 30px; border: 3px solid var(--border); border-top-color: var(--rose); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 0 auto 1rem; }
+
+    footer { text-align: center; padding: 2rem 1rem; font-size: 0.78rem; color: var(--muted); font-weight: 700; border-top: 2px dashed var(--border); margin-top: 2rem; }
+    footer a { color: var(--rose); text-decoration: none; }
+
+    @media (max-width: 480px) {
+      .stat-bar { flex-wrap: wrap; }
+      .stat { min-width: 50%; }
+      .search-box { width: 100%; margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-tag">🎀 Kawaii Dev Space · Repositorio</div>
+  <h1>Archivos Subidos 🌸</h1>
+  <p class="hero-sub">Todos los archivos del repositorio, en tiempo real ✨</p>
+</div>
+
+<div class="stat-bar">
+  <div class="stat">
+    <span class="stat-label">Total archivos</span>
+    <span class="stat-value" id="stat-total">—</span>
+  </div>
+  <div class="stat">
+    <span class="stat-label">Tipos distintos</span>
+    <span class="stat-value" id="stat-types">—</span>
+  </div>
+  <div class="stat">
+    <span class="stat-label">Repositorio</span>
+    <span class="stat-value brown">jenni2206</span>
+  </div>
+</div>
+
+<main>
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-btn active" data-ext="all">🌸 Todos</button>
+    <input class="search-box" type="text" placeholder="🔍 Buscar archivo..." id="search-input"/>
+  </div>
+  <div class="files-grid" id="files-grid">
+    <div class="state-box"><div class="spinner"></div><p>Cargando archivos desde GitHub... 🐱</p></div>
+  </div>
+</main>
+
+<footer>
+  Datos en tiempo real via GitHub API 🎀 ·
+  <a href="https://github.com/jenni2206/jenni2206" target="_blank">jenni2206/jenni2206</a>
+</footer>
+
+<script>
+  const REPO    = 'jenni2206/jenni2206';
+  const FOLDER  = 'drive-download-20260608T194214Z-3-001';
+  const API_URL = `https://api.github.com/repos/${REPO}/contents/${FOLDER}`;
+
+  const ICONS = {
+    pdf:'📄', doc:'📝', docx:'📝', ppt:'📊', pptx:'📊',
+    xls:'📈', xlsx:'📈', java:'☕', py:'🐍', sql:'🗄️',
+    cpp:'⚙️', c:'⚙️', zip:'📦', rar:'📦', txt:'📃',
+    png:'🖼️', jpg:'🖼️', jpeg:'🖼️', gif:'🖼️', mp4:'🎬',
+    html:'🌐', css:'🎨', js:'📜', md:'📋'
+  };
+
+  function getExt(name) { return name.split('.').pop().toLowerCase(); }
+  function extClass(ext) {
+    return ['pdf','docx','doc','pptx','ppt','xlsx','xls','java','py','sql','cpp','c','zip','rar'].includes(ext)
+      ? `ext-${ext}` : 'ext-default';
+  }
+  function formatSize(b) {
+    if (!b) return '—';
+    if (b < 1024) return b + ' B';
+    if (b < 1048576) return (b/1024).toFixed(1) + ' KB';
+    return (b/1048576).toFixed(1) + ' MB';
+  }
+
+  function renderCard(file) {
+    const ext = getExt(file.name);
+    const card = document.createElement('a');
+    card.className = 'file-card';
+    card.href = file.html_url;
+    card.target = '_blank';
+    card.dataset.ext = ext;
+    card.dataset.name = file.name.toLowerCase();
+    card.innerHTML = `
+      <div class="file-icon">${ICONS[ext] || '🎀'}</div>
+      <div class="file-name">${file.name}</div>
+      <div class="file-meta">
+        <span class="file-ext ${extClass(ext)}">${ext}</span>
+        <span class="file-size">${formatSize(file.size)}</span>
+      </div>
+      <div class="dl-badge">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Ver en GitHub 🌸
+      </div>`;
+    return card;
+  }
+
+  function buildFilters(files) {
+    const exts = [...new Set(files.map(f => getExt(f.name)))].sort();
+    const bar  = document.getElementById('filter-bar');
+    const srch = document.getElementById('search-input');
+    exts.forEach(ext => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn'; btn.dataset.ext = ext;
+      btn.textContent = ext.toUpperCase();
+      bar.insertBefore(btn, srch);
+    });
+    bar.addEventListener('click', e => {
+      if (!e.target.matches('.filter-btn')) return;
+      bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active'); filterFiles();
+    });
+    srch.addEventListener('input', filterFiles);
+  }
+
+  function filterFiles() {
+    const ext   = document.querySelector('.filter-btn.active').dataset.ext;
+    const query = document.getElementById('search-input').value.toLowerCase();
+    document.querySelectorAll('.file-card').forEach(c => {
+      c.style.display = (ext === 'all' || c.dataset.ext === ext) && c.dataset.name.includes(query) ? '' : 'none';
+    });
+  }
+
+  async function loadFiles() {
+    const grid = document.getElementById('files-grid');
+    try {
+      const files = await (await fetch(API_URL)).json();
+      if (!Array.isArray(files) || !files.length) {
+        grid.innerHTML = `<div class="state-box"><div class="icon">🎀</div><p>No se encontraron archivos.</p></div>`; return;
+      }
+      const f = files.filter(x => x.type === 'file');
+      document.getElementById('stat-total').textContent = f.length;
+      document.getElementById('stat-types').textContent = new Set(f.map(x => getExt(x.name))).size;
+      buildFilters(f); grid.innerHTML = '';
+      f.forEach(x => grid.appendChild(renderCard(x)));
+    } catch {
+      grid.innerHTML = `<div class="state-box"><div class="icon">🌅</div><p>Error al cargar. Intenta más tarde.</p></div>`;
+    }
+  }
+
+  loadFiles();
+</script>
+</body>
+</html>
