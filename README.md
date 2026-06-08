@@ -32,8 +32,8 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 | Lenguajes | Herramientas & DBs | Hobbies |
 | :---: | :---: | :---: |
 | [![Java](https://img.shields.io/badge/-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/) | [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/) | [![Hello Kitty](https://img.shields.io/badge/-Hello_Kitty_Fan-FF91AF?style=for-the-badge&logoColor=white)](https://www.sanrio.com/) |
-| [![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) | [![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.postgresql.org/) | [![Roblox](https://img.shields.io/badge/-Roblox-000000?style=for-the-badge&logo=roblox&logoColor=white)](https://www.roblox.com/) |
-| [![C++](https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://cplusplus.com/) | [![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/) | [![Gaming](https://img.shields.io/badge/-Dead_Island_2-5865F2?style=for-the-badge)](https://deadisland.com/) |
+| [![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) | [![SQL](https://img.shields.io/badge/-SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.postgresql.org/) | |
+| [![C++](https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://cplusplus.com/) | [![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/) | |
 
 </div>
 
