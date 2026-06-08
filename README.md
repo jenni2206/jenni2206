@@ -20,7 +20,7 @@ Desarrolladora de software en formación, apasionada por escribir código limpio
 
 - 🎀 **Actualmente:** Bachillerato Técnico en Desarrollo de Software
 - 🌍 **Meta:** De El Salvador para el mundo, con mucho código y más kawaii
-- 🗣️ **Idiomas:** `Español: Nativo` · `English: Intermediate`
+- 🗣️ **Idiomas:** `Español: Nativo` · `English: Basic`
 - ✨ **Dato curioso:** Cada bug corregido merece una caminata de recompensa 🌅
 
 ---
